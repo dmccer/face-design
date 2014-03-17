@@ -1,0 +1,19 @@
+.banner {
+	color: #ffffff;
+	padding: 55px 0 20px;
+}
+.banner .title {
+	margin-bottom: 25px;
+}
+.banner .title h2 {
+	font-size: 72px;
+}
+
+.banner .title span {
+	font-size: 16px;
+}
+
+.banner p {
+	width: 60%;
+	line-height: 22px;
+}

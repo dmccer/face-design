@@ -1,0 +1,79 @@
+.header {
+	margin-bottom: 15px;
+}
+
+.banner {
+	text-align: center;
+}
+
+.content {
+	margin-top: 4px;
+	margin-bottom: 30px;
+}
+.brand-description {
+	padding-top: 10px;
+}
+.brand-description p {
+	font-size: 16px;
+	line-height: 28px;
+}
+.brand-color {
+	color: #1b8686;
+}
+.contact-style a {
+	display: block;
+}
+.contact-style a {
+	color: #000000;
+}
+
+.contact-style img {
+	width: 58px;
+	height: 58px;
+}
+.contact-style .contact-us {
+	height: 56px;
+	border: 1px solid #1f939a;
+	padding-left: 75px;
+	margin-left: 15px;
+	background: url('../img/logo-mini.png') no-repeat 11px 11px;	
+}
+ .contact-style .contact-us p {
+ 	font-size: 18px;
+ 	line-height: 20px;
+ }
+
+.contact-us p.first {
+	margin-top: 8px;
+	margin-right: 11px;
+}
+.carousel {
+	position: relative;
+}
+.carousel .prev-item, .carousel .next-item {
+	position: absolute;
+	top: 200px;
+	width: 91px;
+	height: 91px;
+	background: url('../img/icon-sprites.png') no-repeat;
+}
+.carousel .prev-item a, .carousel .next-item a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.carousel .prev-item {
+	left: 10px;
+	background-position: 0 -233px;
+}
+.carousel .next-item {
+	right: 10px;
+	background-position: 0 -122px;
+}
+.carousel-item {
+	text-align: center;
+}
+.carousel-item img {
+	border: none;
+	vertical-align: top;
+}
