@@ -48,7 +48,7 @@
 	</div>
 	<script type="text/template" id="tpl-case-list">
 		<% for (var i = 0; i < caseList.length; i++) { %>
-			<a href="<%= caseList[i].url %>" class="<%= (i === 3 ? 'fr' : '') %>"><img src="assets/img/cases/<%= caseList[i].imgName %>.png" /></a>
+			<a href="<%= caseList[i].url %>" class="<%= ((i == 1 || i == 3) ? 'fr' : '') %>"><img src="assets/img/cases/<%= caseList[i].imgName %>.png" /></a>
 		<% } %>
 	</script>
 	<script type="text/javascript" src="assets/js/lib/jquery-1.11.0.min.js"></script>
