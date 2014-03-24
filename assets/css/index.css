@@ -8,13 +8,38 @@
 
 .content {
 	margin-top: 4px;
-	margin-bottom: 30px;
-}
-
-.content img {
-	display: inline-block;
 }
 
 .prd-action {
 	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.prd-action a {
+	display: inline-block;
+	color: #343130;
+	padding: 1px 0 1px 25px;
+	background: url('../img/icon-sprites.png') no-repeat;
+}
+
+.prd-action a:hover {
+	color: #1b8686;
+}
+
+.prd-action a.reduce-case {
+	background-position: 0 -84px;
+}
+.prd-action a.increase-case {
+	background-position: 0 -46px;
+}
+
+.content a {
+	display: inline-block;
+	padding-bottom: 4px;
+}
+
+.content a img {
+	display: inline-block;
+	border: none;
+	vertical-align: top;
 }

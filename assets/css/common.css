@@ -21,6 +21,14 @@
 	clear: both;
 }
 
+.hide {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
 .mb10 {
 	margin-bottom: 10px;
 }
@@ -71,26 +79,30 @@ body {
 }
 
 .telphone {
+	float: right;
 	color: #313232;
 	font-weight: bolder;
 	font-size: 25px;
 	text-align: right;
+	background: url('../img/icon-sprites.png') no-repeat;
+	background-position: 0 0;
+	padding-left: 35px;
 }
 
 .menus li {
 	float: left;
 	padding: 0 15px;
-	border-right: 2px solid #313232;
+	background: url('../img/vertical-line.png') no-repeat right center;
 }
 
 .menus li:last-child {
-	border-right: none;
 	padding-right: 0;
+	background: none;
 }
 
 .menus li a {
 	display: block;
-	padding: 10px 0;
+	padding: 14px 0 10px;
 	font-size: 16px;
 	color: #313232;
 	font-weight: bolder;
