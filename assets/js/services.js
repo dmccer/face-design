@@ -32,32 +32,71 @@
         };
     };
 
-    var $banner = $('.banner');
+    var $bannerBg = $('.banner .bgcontainer');
     var $mask = $('.banner .mask');
     var $baseDesc = $('.base-description');
     var $tabs = $('.hover-switch .tabs');
 
-    $tabs.on('mouseenter', 'li', debounce(function() {
-    	var bgImgSrc = $(this).attr('data-imgsrc');
+    var enterItem = function() {
+        $baseDesc.stop();
+        $mask.stop();
+        $bannerBg.stop();
 
-        $baseDesc.addClass('hide');
+        var bgImgSrc = $(this).attr('data-imgsrc');
 
-        $mask.removeClass('hide');
+        $baseDesc.animate({
+            opacity: 0
+        }, {duration: 500, queue: true});
 
-        $banner.css({
-            backgroundColor: '#fff',
+        $mask.removeClass('hide').animate({
+            opacity: 0.6
+        }, {duration: 1000, queue: true});
+
+        $bannerBg.css({
             backgroundImage: 'url(' + bgImgSrc + ')'
+        }).animate({
+            opacity: 1
+        }, {
+            duration: 1000,
+            queue: true
         });
-    }, 200));
+    };
 
-    $tabs.on('mouseleave', 'li', function() {
-        $banner.css({
-            background: 'none'
+    var leaveItem = function () {
+        $baseDesc.stop();
+        $mask.stop();
+        $bannerBg.stop();
+
+        $bannerBg.animate({
+            opacity: 0
+        }, {
+            duration: 500,
+            queue: true,
+            complete: function () {
+                $bannerBg.css({
+                    background: 'none'
+                });
+            }
         });
 
-        $baseDesc.removeClass('hide');
+        $baseDesc.animate({
+            opacity: 1
+        }, 500);
 
-        $mask.addClass('hide');
-    });
+        $mask.animate({
+            opacity: 0
+        }, {
+            duration: 500,
+            queue: true,
+            complete: function () {
+                $mask.addClass('hide')
+            }
+        });
+    };
 
+    $tabs.on('mouseenter', 'li', debounce(enterItem, 500));
+
+    $tabs.on('mouseleave', 'li', leaveItem);
+
+    $tabs.on('mouseleave', debounce(leaveItem, 500))
 })()

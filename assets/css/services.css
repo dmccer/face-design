@@ -10,8 +10,15 @@
 	width: 100%;
 	height: 100%;
 	background-color: #000;
-	opacity: 0.6;
-	filter: aplha(opacity=60%);
+	opacity: 0;
+	filter: aplha(opacity=0%);
+}
+.banner .bgcontainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: aplha(opacity=0%);
 }
 .hover-switch {
 	position: relative;
@@ -21,7 +28,6 @@
 	text-align: center;
 	position: absolute;
 	top: 0;
-	/*display: none;*/
 }
 
 .base-description .title {
@@ -41,8 +47,7 @@
 }
 
 .hover-switch .tabs {
-	margin-top: 70px;
-	padding: 0 25px;
+	margin: 70px 25px 0 25px;
 }
 
 .hover-switch .tabs li {
