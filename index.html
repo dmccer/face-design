@@ -29,12 +29,54 @@
 	</div>
 	<div class="content vw" id="case-list">
 		<img src="assets/img/brand-innovation.png" alt="品牌创新永不止步" />
-		<a href="./case.html"><img src="assets/img/cases/product-1.png" /></a>
-		<a href="./case.html" class="fr"><img src="assets/img/cases/product-2.png" /></a>
-		<a href="./case.html"><img src="assets/img/cases/product-3.png" /></a>
-		<a href="./case.html" class="fr"><img src="assets/img/cases/product-4.png" /></a>
-		<a href="./case.html"><img src="assets/img/cases/product-5.png" /></a>
-		<a href="./case.html"><img src="assets/img/cases/product-6.png" /></a>
+		<a href="./case.html" class="portrait">
+			<img src="assets/img/cases/product-1.png" />
+			<div class="description">
+				<p>展示设计师</p>
+				<p>PANO PAN</p>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<a href="./case.html" class="portrait fr">
+			<img src="assets/img/cases/product-2.png" />
+			<div class="description">
+				<p>展示设计师</p>
+				<p>PANO PAN</p>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<a href="./case.html" class="portrait">
+			<img src="assets/img/cases/product-3.png" />
+			<div class="description">
+				<p>展示设计师</p>
+				<p>PANO PAN</p>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<a href="./case.html" class="portrait fr">
+			<img src="assets/img/cases/product-4.png" />
+			<div class="description">
+				<p>展示设计师</p>
+				<p>PANO PAN</p>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<a href="./case.html" class="portrait">
+			<img src="assets/img/cases/product-5.png" />
+			<div class="description">
+				<p>展示设计师</p>
+				<p>PANO PAN</p>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<a href="./case.html" class="portrait">
+			<img src="assets/img/cases/product-6.png" />
+			<div class="description">
+				<p>展示设计师</p>
+				<p>PANO PAN</p>
+			</div>
+			<div class="mask"></div>
+		</a>
 	</div>
 	<div class="prd-action vw clearfix">
 		<a href="javascript:void(0);" class="reduce-case">减少更多案例</a>
@@ -48,7 +90,14 @@
 	</div>
 	<script type="text/template" id="tpl-case-list">
 		<% for (var i = 0; i < caseList.length; i++) { %>
-			<a href="<%= caseList[i].url %>" class="<%= ((i == 1 || i == 3) ? 'fr' : '') %>"><img src="assets/img/cases/<%= caseList[i].imgName %>.png" /></a>
+			<a href="<%= caseList[i].url %>" class="portrait <%= ((i == 1 || i == 3) ? 'fr' : '') %>">
+				<img src="assets/img/cases/<%= caseList[i].imgName %>.png" />
+				<div class="description">
+					<p><%= caseList[i].title %></p>
+					<p><%= caseList[i].content %></p>
+				</div>
+				<div class="mask"></div>
+			</a>
 		<% } %>
 	</script>
 	<script type="text/javascript" src="assets/js/lib/jquery-1.11.0.min.js"></script>

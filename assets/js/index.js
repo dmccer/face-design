@@ -3,59 +3,85 @@ $(function () {
 		[
 			{
 				imgName: 'product-1',
-				url: 'product-1'
+				url: 'product-1',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-2',
-				url: 'product-2'
+				url: 'product-2',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-3',
-				url: 'product-3'
+				url: 'product-3',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-4',
-				url: 'product-4'
+				url: 'product-4',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-5',
-				url: 'product-5'
+				url: 'product-5',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-6',
-				url: 'product-6'
+				url: 'product-6',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			}
 		],
 		[
 			{
 				imgName: 'product-1',
-				url: 'product-1'
+				url: 'product-1',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-2',
-				url: 'product-2'
+				url: 'product-2',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-3',
-				url: 'product-3'
+				url: 'product-3',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-4',
-				url: 'product-4'
+				url: 'product-4',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-5',
-				url: 'product-5'
+				url: 'product-5',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-6',
-				url: 'product-6'
+				url: 'product-6',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			}
 		],
 		[
 			{
 				imgName: 'product-1',
-				url: 'product-1'
+				url: 'product-1',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-2',
@@ -63,19 +89,27 @@ $(function () {
 			},
 			{
 				imgName: 'product-3',
-				url: 'product-3'
+				url: 'product-3',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-4',
-				url: 'product-4'
+				url: 'product-4',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-5',
-				url: 'product-5'
+				url: 'product-5',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			},
 			{
 				imgName: 'product-6',
-				url: 'product-6'
+				url: 'product-6',
+				title: '产品设计师',
+				content: '简介简介简介简介简介'
 			}
 		]
 	];
