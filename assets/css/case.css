@@ -46,9 +46,8 @@
 .carousel {
     position: relative;
     width: 1000px;
-    height: 1046px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /*height: 1046px;*/
+    overflow: hidden;
 }
 .carousel-list {
 	position: absolute;

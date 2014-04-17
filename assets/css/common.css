@@ -43,7 +43,7 @@ a {
 }
 
 body {
-	font: normal 14px '微软雅黑', Arial, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+	font: normal 14px "Microsoft YaHei", Arial, STHeiTi, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .header-wrap {
@@ -76,6 +76,7 @@ body {
 
 .nav {
 	float: right;
+	font-family: Arial;
 }
 
 .telphone {
@@ -114,6 +115,7 @@ body {
 }
 
 .footer {
+	font-family: Arial;
 	margin-top: 15px;
 	padding: 10px 0 20px 0;
 	border-top: 2px dotted #7c7b7b;
@@ -147,8 +149,11 @@ body {
 }
 .portrait .mask {
 	background-color: #000000;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	/* IE 5-7 */
+	filter: alpha(opacity=30);
 	opacity: 0.3;
-	filter: alpha(opacity=30%);
 	z-index: 2;
 }
 .portrait .description {

@@ -2,114 +2,34 @@ $(function () {
 	var caseList = [
 		[
 			{
-				imgName: 'product-1',
-				url: 'product-1',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
+				imgName: 'product-7.jpg',
+				url: 'product-7',
+				title: '奥普壁挂式浴霸'
 			},
 			{
-				imgName: 'product-2',
-				url: 'product-2',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
+				imgName: 'product-8.jpg',
+				url: 'product-8',
+				title: '美的静饮水机'
 			},
 			{
-				imgName: 'product-3',
-				url: 'product-3',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
+				imgName: 'product-9.jpg',
+				url: 'product-9',
+				title: 'Headset 耳机'
 			},
 			{
-				imgName: 'product-4',
-				url: 'product-4',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
+				imgName: 'product-10.jpg',
+				url: 'product-10',
+				title: '格力变频空调'
 			},
 			{
-				imgName: 'product-5',
-				url: 'product-5',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
+				imgName: 'product-11.jpg',
+				url: 'product-11',
+				title: '正克即热式热水器'
 			},
 			{
-				imgName: 'product-6',
-				url: 'product-6',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			}
-		],
-		[
-			{
-				imgName: 'product-1',
-				url: 'product-1',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-2',
-				url: 'product-2',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-3',
-				url: 'product-3',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-4',
-				url: 'product-4',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-5',
-				url: 'product-5',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-6',
-				url: 'product-6',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			}
-		],
-		[
-			{
-				imgName: 'product-1',
-				url: 'product-1',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-2',
-				url: 'product-2'
-			},
-			{
-				imgName: 'product-3',
-				url: 'product-3',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-4',
-				url: 'product-4',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-5',
-				url: 'product-5',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
-			},
-			{
-				imgName: 'product-6',
-				url: 'product-6',
-				title: '产品设计师',
-				content: '简介简介简介简介简介'
+				imgName: 'product-12.jpg',
+				url: 'product-12',
+				title: '中信锅具设计'
 			}
 		]
 	];

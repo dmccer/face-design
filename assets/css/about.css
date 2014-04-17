@@ -26,8 +26,12 @@
 }
 .g-intro .mask {
 	background-color: #000000;
+	filter: alpha(opacity=60);
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/* IE 5-7 */
+	filter: alpha(opacity=60);
 	opacity: 0.6;
-	filter: alpha(opacity=60%);
 	z-index: 2;
 }
 .g-intro .intro {
@@ -99,5 +103,6 @@
 	background-position: center -400px;
 }
 .brand-group .col6 {
+	margin-right: 0;
 	background-position: center -500px;
 }

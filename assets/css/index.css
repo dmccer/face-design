@@ -43,3 +43,11 @@
 	border: none;
 	vertical-align: top;
 }
+
+.content .portrait .description p {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	right: 1em;
+	bottom: 1.5em;
+}

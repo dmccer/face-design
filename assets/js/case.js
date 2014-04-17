@@ -9,6 +9,10 @@
 	var len = $carouselList.length;
 	var currentItemIndex = 0;
 
+	setTimeout(function () {
+		$carouselContainer.height($carouselList.eq(0).outerHeight());
+	}, 1000);
+
 	$carouselContainer.on({
 		'mouseenter': function () {
 			$prevBtn.fadeIn();
@@ -22,30 +26,36 @@
 
 	$nextBtn.on('click', function () {
 		if (currentItemIndex >= len - 1) {
-			currentItemIndex = 0;
-		} else {
-			currentItemIndex++;
+			return;
 		}
+		
+		currentItemIndex++;
 
-		$carouselListContainer.animate({
+		$carouselListContainer.css({
 			left: -currentItemIndex * 1000
-		}, 800);
+		});
+
+		$carouselContainer.height($carouselList.eq(currentItemIndex).height());
+		$(window).scrollTop(0)
 	});
 
 	$prevBtn.on('click', function () {
 		if (currentItemIndex <= 0) {
-			currentItemIndex = len - 1;
-		} else {
-			currentItemIndex--;
+			return;
 		}
+		
+		currentItemIndex--;
 
-		$carouselListContainer.animate({
+		$carouselListContainer.css({
 			left: -currentItemIndex * 1000
-		}, 800);
+		});
+
+		$carouselContainer.height($carouselList.eq(currentItemIndex).height());
+		$(window).scrollTop(0)
 	});
 
-	$carouselContainer.scroll(function () {
-		var top = $carouselContainer.scrollTop() + 200;
+	$(window).scroll(function () {
+		var top = $(window).scrollTop() - 200;
 
 		$prevBtn.css({
 			top: top

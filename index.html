@@ -32,48 +32,42 @@
 		<a href="./case.html" class="portrait">
 			<img src="assets/img/cases/product-1.png" />
 			<div class="description">
-				<p>展示设计师</p>
-				<p>PANO PAN</p>
+				<p>九阳西式电器设计方案</p>
 			</div>
 			<div class="mask"></div>
 		</a>
 		<a href="./case.html" class="portrait fr">
 			<img src="assets/img/cases/product-2.png" />
 			<div class="description">
-				<p>展示设计师</p>
-				<p>PANO PAN</p>
+				<p>鱼跃壁挂式诊疗一体机</p>
 			</div>
 			<div class="mask"></div>
 		</a>
 		<a href="./case.html" class="portrait">
 			<img src="assets/img/cases/product-3.png" />
 			<div class="description">
-				<p>展示设计师</p>
-				<p>PANO PAN</p>
+				<p>T&amp;W 路由器设计</p>
 			</div>
 			<div class="mask"></div>
 		</a>
 		<a href="./case.html" class="portrait fr">
 			<img src="assets/img/cases/product-4.png" />
-			<div class="description">
-				<p>展示设计师</p>
-				<p>PANO PAN</p>
+			<!-- <div class="description">
+				<p>CORDLESS PHONE</p>
 			</div>
-			<div class="mask"></div>
+			<div class="mask"></div> -->
 		</a>
 		<a href="./case.html" class="portrait">
 			<img src="assets/img/cases/product-5.png" />
 			<div class="description">
-				<p>展示设计师</p>
-				<p>PANO PAN</p>
+				<p>CORDLESS PHONE</p>
 			</div>
 			<div class="mask"></div>
 		</a>
 		<a href="./case.html" class="portrait">
 			<img src="assets/img/cases/product-6.png" />
 			<div class="description">
-				<p>展示设计师</p>
-				<p>PANO PAN</p>
+				<p>静饮机设计方案</p>
 			</div>
 			<div class="mask"></div>
 		</a>
@@ -91,12 +85,13 @@
 	<script type="text/template" id="tpl-case-list">
 		<% for (var i = 0; i < caseList.length; i++) { %>
 			<a href="<%= caseList[i].url %>" class="portrait <%= ((i == 1 || i == 3) ? 'fr' : '') %>">
-				<img src="assets/img/cases/<%= caseList[i].imgName %>.png" />
-				<div class="description">
-					<p><%= caseList[i].title %></p>
-					<p><%= caseList[i].content %></p>
-				</div>
-				<div class="mask"></div>
+				<img src="assets/img/cases/<%= caseList[i].imgName %>" />
+				<% if (i !== 3) { %>
+					<div class="description">
+						<p><%= caseList[i].title %></p>
+					</div>
+					<div class="mask"></div>
+				<% } %>
 			</a>
 		<% } %>
 	</script>

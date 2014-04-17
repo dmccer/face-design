@@ -3,7 +3,7 @@
         var timeout, args, context, timestamp, result;
 
         var later = function() {
-            var last = Date.now() - timestamp;
+            var last = new Date().getTime() - timestamp;
             if (last < wait) {
                 timeout = setTimeout(later, wait - last);
             } else {
@@ -18,7 +18,7 @@
         return function() {
             context = this;
             args = arguments;
-            timestamp = Date.now();
+            timestamp = new Date().getTime();
             var callNow = immediate && !timeout;
             if (!timeout) {
                 timeout = setTimeout(later, wait);
