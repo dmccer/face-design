@@ -31,6 +31,38 @@ $(function () {
 				url: 'product-12',
 				title: '中信锅具设计'
 			}
+		],
+		[
+			{
+				imgName: 'product-13.jpg',
+				url: 'product-13',
+				title: '欧林净水器设计方案'
+			},
+			{
+				imgName: 'product-14.jpg',
+				url: 'product-14',
+				title: '路由器设计方案'
+			},
+			{
+				imgName: 'product-15.jpg',
+				url: 'product-15',
+				title: '松下概念空调设计方案'
+			},
+			{
+				imgName: 'product-16.jpg',
+				url: 'product-16',
+				title: '格力空调遥控器设计'
+			},
+			{
+				imgName: 'product-17.jpg',
+				url: 'product-17',
+				title: '利仁电饼铛设计方案'
+			},
+			{
+				imgName: 'product-18.jpg',
+				url: 'product-18',
+				title: 'Mobile Air Conditioning'
+			}
 		]
 	];
 
@@ -40,7 +72,7 @@ $(function () {
 	var $reduceCaseBtn = $('.reduce-case');
 	var $increaseCase = $('.increase-case');
 
-	var offset = 0;
+	var offset = 6;
 	var addedImgEls = [];
 
 	$increaseCase.on('click', function () {
@@ -48,9 +80,13 @@ $(function () {
 			return;
 		}
 
-		var $part = $(tmpl($tplCaseList.html(), { 'caseList': caseList[addedImgEls.length] }));
+		var partData = caseList[addedImgEls.length];
+
+		var $part = $(tmpl($tplCaseList.html(), { 'caseList': partData, offset: offset }));
 		addedImgEls.push($part);
 		$caseList.append($part);
+
+		offset += partData.length;
 	});
 
 	$reduceCaseBtn.on('click', function () {

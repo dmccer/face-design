@@ -65,6 +65,12 @@
 	position: relative;
 }
 
+.hover-switch .tabs .tab-item-container {
+	height: 245px;
+	margin-top: 220px;
+	position: relative;
+}
+
 .hover-switch .tabs li:hover {
 	cursor: pointer;
 }
@@ -85,8 +91,13 @@
 	top: 0;
 }
 
+.hover-switch .tabs li .info-view {
+	top: -220px;
+	height: 465px;
+}
+
 .hover-switch .tabs li .icon-view {
-	margin-top: 150px;
+	/*margin-top: 150px;*/
 }
 
 .icon-view .icon-container {
@@ -122,7 +133,7 @@
 	/*opacity: 0;*/
 }
 
-.hover-switch .tabs li:hover .info-view {
+.hover-switch .tabs .tab-item-container:hover .info-view {
 	left: 0px;
 	background-color: #fff;
 	/* IE 8 */

@@ -1,4 +1,22 @@
 (function () {
+	var getQSParam = function (name) {
+		var searchStr = location.search;
+		searchStr = searchStr.substr(1);
+
+		var sa = searchStr.split('&');
+
+		var o = {};
+		var kvArr;
+
+		for (var i = 0; i < sa.length; i++) {
+			kvArr = sa[i].split('=');
+
+			o[kvArr[0]] = (kvArr.length === 2 ? kvArr[1] : '');
+		}
+
+		return o[name];
+	}
+
 	var $carouselContainer = $('.carousel');
 	var $carouselListContainer = $('.carousel .carousel-list');
 	var $carouselList = $('.carousel .carousel-item')
@@ -7,10 +25,21 @@
 	var $nextBtn = $('.carousel .next-item');
 
 	var len = $carouselList.length;
-	var currentItemIndex = 0;
+
+	var currentItemIndex = parseInt(getQSParam('i'), 10) - 1;
+
+	var animate = function (currentItemIndex) {
+		$carouselListContainer.css({
+			left: -currentItemIndex * 1000
+		});
+
+		$carouselContainer.height($carouselList.eq(currentItemIndex).height());
+		$(window).scrollTop(569);
+	}
 
 	setTimeout(function () {
-		$carouselContainer.height($carouselList.eq(0).outerHeight());
+		// $carouselContainer.height($carouselList.eq(currentItemIndex).outerHeight());
+		animate(currentItemIndex);
 	}, 1000);
 
 	$carouselContainer.on({
@@ -31,12 +60,7 @@
 		
 		currentItemIndex++;
 
-		$carouselListContainer.css({
-			left: -currentItemIndex * 1000
-		});
-
-		$carouselContainer.height($carouselList.eq(currentItemIndex).height());
-		$(window).scrollTop(0)
+		animate(currentItemIndex);
 	});
 
 	$prevBtn.on('click', function () {
@@ -46,12 +70,7 @@
 		
 		currentItemIndex--;
 
-		$carouselListContainer.css({
-			left: -currentItemIndex * 1000
-		});
-
-		$carouselContainer.height($carouselList.eq(currentItemIndex).height());
-		$(window).scrollTop(0)
+		animate(currentItemIndex);
 	});
 
 	$(window).scroll(function () {

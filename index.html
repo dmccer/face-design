@@ -29,42 +29,38 @@
 	</div>
 	<div class="content vw" id="case-list">
 		<img src="assets/img/brand-innovation.png" alt="品牌创新永不止步" />
-		<a href="./case.html" class="portrait">
+		<a href="./case.html?i=1" class="portrait">
 			<img src="assets/img/cases/product-1.png" />
 			<div class="description">
 				<p>九阳西式电器设计方案</p>
 			</div>
 			<div class="mask"></div>
 		</a>
-		<a href="./case.html" class="portrait fr">
+		<a href="./case.html?i=2" class="portrait fr">
 			<img src="assets/img/cases/product-2.png" />
 			<div class="description">
 				<p>鱼跃壁挂式诊疗一体机</p>
 			</div>
 			<div class="mask"></div>
 		</a>
-		<a href="./case.html" class="portrait">
+		<a href="./case.html?i=3" class="portrait">
 			<img src="assets/img/cases/product-3.png" />
 			<div class="description">
 				<p>T&amp;W 路由器设计</p>
 			</div>
 			<div class="mask"></div>
 		</a>
-		<a href="./case.html" class="portrait fr">
+		<a href="./case.html?i=4" class="portrait fr">
 			<img src="assets/img/cases/product-4.png" />
-			<!-- <div class="description">
-				<p>CORDLESS PHONE</p>
-			</div>
-			<div class="mask"></div> -->
 		</a>
-		<a href="./case.html" class="portrait">
+		<a href="./case.html?i=5" class="portrait">
 			<img src="assets/img/cases/product-5.png" />
 			<div class="description">
 				<p>CORDLESS PHONE</p>
 			</div>
 			<div class="mask"></div>
 		</a>
-		<a href="./case.html" class="portrait">
+		<a href="./case.html?i=6" class="portrait">
 			<img src="assets/img/cases/product-6.png" />
 			<div class="description">
 				<p>静饮机设计方案</p>
@@ -84,7 +80,7 @@
 	</div>
 	<script type="text/template" id="tpl-case-list">
 		<% for (var i = 0; i < caseList.length; i++) { %>
-			<a href="<%= caseList[i].url %>" class="portrait <%= ((i == 1 || i == 3) ? 'fr' : '') %>">
+			<a href="<%= './case.html?i=' + (offset + i + 1) %>" class="portrait <%= ((i == 1 || i == 3) ? 'fr' : '') %>">
 				<img src="assets/img/cases/<%= caseList[i].imgName %>" />
 				<% if (i !== 3) { %>
 					<div class="description">

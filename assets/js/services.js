@@ -94,7 +94,7 @@
         });
     };
 
-    $tabs.on('mouseenter', 'li', debounce(enterItem, 500));
+    $tabs.on('mouseenter', '.icon-view', debounce(enterItem, 500));
 
     $tabs.on('mouseleave', 'li', leaveItem);
 
